@@ -1,0 +1,50 @@
+body {
+  display: block;
+  margin: 10px;
+}
+body .b_likes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+body .b_likes :hover {
+  cursor: pointer;
+  opacity: 1;
+  transition: 0.3s;
+}
+body .b_likes button {
+  display: flex;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  height: 90px;
+  border: none;
+  padding: 0;
+  margin-left: 10px;
+  opacity: 0.6;
+  outline: none;
+  background: transparent;
+}
+body .b_likes button .icon {
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+body .b_likes button .counter {
+  min-width: 60px;
+  margin: 0 12px;
+  font-weight: bold;
+}
+body .b_likes .like .icon {
+  background-image: url("../imgs/like_black.svg");
+}
+body .b_likes .like.selected .icon {
+  background-image: url("../imgs/like_red.svg");
+}
+body .b_likes .dislike .icon {
+  background-image: url("../imgs/like_black.svg");
+  transform: scaleY(-1);
+}
+body .b_likes .dislike.selected .icon {
+  background-image: url("../imgs/like_red.svg");
+}
